@@ -54,7 +54,7 @@
             // lbl_yearlysavings
             // 
             this.lbl_yearlysavings.AutoSize = true;
-            this.lbl_yearlysavings.Location = new System.Drawing.Point(9, 201);
+            this.lbl_yearlysavings.Location = new System.Drawing.Point(12, 180);
             this.lbl_yearlysavings.Name = "lbl_yearlysavings";
             this.lbl_yearlysavings.Size = new System.Drawing.Size(75, 13);
             this.lbl_yearlysavings.TabIndex = 51;
@@ -62,7 +62,7 @@
             // 
             // tb_savingsyearly
             // 
-            this.tb_savingsyearly.Location = new System.Drawing.Point(196, 198);
+            this.tb_savingsyearly.Location = new System.Drawing.Point(196, 173);
             this.tb_savingsyearly.Name = "tb_savingsyearly";
             this.tb_savingsyearly.Size = new System.Drawing.Size(100, 20);
             this.tb_savingsyearly.TabIndex = 50;
@@ -80,16 +80,17 @@
             // 
             // tb_sg
             // 
-            this.tb_sg.Location = new System.Drawing.Point(199, 94);
+            this.tb_sg.Location = new System.Drawing.Point(196, 94);
             this.tb_sg.Name = "tb_sg";
             this.tb_sg.Size = new System.Drawing.Size(100, 20);
             this.tb_sg.TabIndex = 48;
             this.tb_sg.Text = "0";
+            this.tb_sg.TextChanged += new System.EventHandler(this.tb_sg_TextChanged);
             // 
             // lbl_monthlysavings
             // 
             this.lbl_monthlysavings.AutoSize = true;
-            this.lbl_monthlysavings.Location = new System.Drawing.Point(12, 127);
+            this.lbl_monthlysavings.Location = new System.Drawing.Point(12, 154);
             this.lbl_monthlysavings.Name = "lbl_monthlysavings";
             this.lbl_monthlysavings.Size = new System.Drawing.Size(83, 13);
             this.lbl_monthlysavings.TabIndex = 47;
@@ -97,7 +98,7 @@
             // 
             // tb_ms
             // 
-            this.tb_ms.Location = new System.Drawing.Point(199, 120);
+            this.tb_ms.Location = new System.Drawing.Point(196, 147);
             this.tb_ms.Name = "tb_ms";
             this.tb_ms.Size = new System.Drawing.Size(100, 20);
             this.tb_ms.TabIndex = 46;
@@ -107,7 +108,7 @@
             // lbl_savingsaccount
             // 
             this.lbl_savingsaccount.AutoSize = true;
-            this.lbl_savingsaccount.Location = new System.Drawing.Point(12, 22);
+            this.lbl_savingsaccount.Location = new System.Drawing.Point(12, 23);
             this.lbl_savingsaccount.Name = "lbl_savingsaccount";
             this.lbl_savingsaccount.Size = new System.Drawing.Size(87, 13);
             this.lbl_savingsaccount.TabIndex = 45;
@@ -115,16 +116,17 @@
             // 
             // tb_savingsaccount
             // 
-            this.tb_savingsaccount.Location = new System.Drawing.Point(199, 15);
+            this.tb_savingsaccount.Location = new System.Drawing.Point(196, 16);
             this.tb_savingsaccount.Name = "tb_savingsaccount";
             this.tb_savingsaccount.Size = new System.Drawing.Size(100, 20);
             this.tb_savingsaccount.TabIndex = 44;
             this.tb_savingsaccount.Text = "0";
+            this.tb_savingsaccount.TextChanged += new System.EventHandler(this.tb_savingsaccount_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 166);
+            this.label1.Location = new System.Drawing.Point(13, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(283, 13);
             this.label1.TabIndex = 52;
@@ -132,7 +134,7 @@
             // 
             // tb_sg1
             // 
-            this.tb_sg1.Location = new System.Drawing.Point(196, 224);
+            this.tb_sg1.Location = new System.Drawing.Point(196, 199);
             this.tb_sg1.Name = "tb_sg1";
             this.tb_sg1.Size = new System.Drawing.Size(100, 20);
             this.tb_sg1.TabIndex = 53;
@@ -141,7 +143,7 @@
             // lbl_sg1
             // 
             this.lbl_sg1.AutoSize = true;
-            this.lbl_sg1.Location = new System.Drawing.Point(12, 230);
+            this.lbl_sg1.Location = new System.Drawing.Point(12, 206);
             this.lbl_sg1.Name = "lbl_sg1";
             this.lbl_sg1.Size = new System.Drawing.Size(79, 13);
             this.lbl_sg1.TabIndex = 54;
@@ -149,24 +151,26 @@
             // 
             // tb_income
             // 
-            this.tb_income.Location = new System.Drawing.Point(199, 41);
+            this.tb_income.Location = new System.Drawing.Point(196, 42);
             this.tb_income.Name = "tb_income";
             this.tb_income.Size = new System.Drawing.Size(100, 20);
             this.tb_income.TabIndex = 55;
             this.tb_income.Text = "0";
+            this.tb_income.TextChanged += new System.EventHandler(this.tb_income_TextChanged);
             // 
             // tb_expenses
             // 
-            this.tb_expenses.Location = new System.Drawing.Point(199, 68);
+            this.tb_expenses.Location = new System.Drawing.Point(196, 68);
             this.tb_expenses.Name = "tb_expenses";
             this.tb_expenses.Size = new System.Drawing.Size(100, 20);
             this.tb_expenses.TabIndex = 56;
             this.tb_expenses.Text = "0";
+            this.tb_expenses.TextChanged += new System.EventHandler(this.tb_expenses_TextChanged);
             // 
             // lbl_income
             // 
             this.lbl_income.AutoSize = true;
-            this.lbl_income.Location = new System.Drawing.Point(12, 48);
+            this.lbl_income.Location = new System.Drawing.Point(12, 49);
             this.lbl_income.Name = "lbl_income";
             this.lbl_income.Size = new System.Drawing.Size(42, 13);
             this.lbl_income.TabIndex = 57;
@@ -183,7 +187,7 @@
             // 
             // tb_sg2
             // 
-            this.tb_sg2.Location = new System.Drawing.Point(196, 251);
+            this.tb_sg2.Location = new System.Drawing.Point(196, 226);
             this.tb_sg2.Name = "tb_sg2";
             this.tb_sg2.Size = new System.Drawing.Size(100, 20);
             this.tb_sg2.TabIndex = 59;
@@ -192,7 +196,7 @@
             // lbl_sg2
             // 
             this.lbl_sg2.AutoSize = true;
-            this.lbl_sg2.Location = new System.Drawing.Point(12, 258);
+            this.lbl_sg2.Location = new System.Drawing.Point(12, 233);
             this.lbl_sg2.Name = "lbl_sg2";
             this.lbl_sg2.Size = new System.Drawing.Size(79, 13);
             this.lbl_sg2.TabIndex = 60;
@@ -201,7 +205,7 @@
             // lbl_sg4
             // 
             this.lbl_sg4.AutoSize = true;
-            this.lbl_sg4.Location = new System.Drawing.Point(12, 311);
+            this.lbl_sg4.Location = new System.Drawing.Point(12, 286);
             this.lbl_sg4.Name = "lbl_sg4";
             this.lbl_sg4.Size = new System.Drawing.Size(79, 13);
             this.lbl_sg4.TabIndex = 64;
@@ -209,7 +213,7 @@
             // 
             // tb_sg4
             // 
-            this.tb_sg4.Location = new System.Drawing.Point(196, 304);
+            this.tb_sg4.Location = new System.Drawing.Point(196, 279);
             this.tb_sg4.Name = "tb_sg4";
             this.tb_sg4.Size = new System.Drawing.Size(100, 20);
             this.tb_sg4.TabIndex = 63;
@@ -218,7 +222,7 @@
             // lbl_sg3
             // 
             this.lbl_sg3.AutoSize = true;
-            this.lbl_sg3.Location = new System.Drawing.Point(12, 284);
+            this.lbl_sg3.Location = new System.Drawing.Point(12, 259);
             this.lbl_sg3.Name = "lbl_sg3";
             this.lbl_sg3.Size = new System.Drawing.Size(79, 13);
             this.lbl_sg3.TabIndex = 62;
@@ -226,7 +230,7 @@
             // 
             // tb_sg3
             // 
-            this.tb_sg3.Location = new System.Drawing.Point(196, 277);
+            this.tb_sg3.Location = new System.Drawing.Point(196, 252);
             this.tb_sg3.Name = "tb_sg3";
             this.tb_sg3.Size = new System.Drawing.Size(100, 20);
             this.tb_sg3.TabIndex = 61;
@@ -236,7 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 386);
+            this.ClientSize = new System.Drawing.Size(311, 317);
             this.Controls.Add(this.lbl_sg4);
             this.Controls.Add(this.tb_sg4);
             this.Controls.Add(this.lbl_sg3);
