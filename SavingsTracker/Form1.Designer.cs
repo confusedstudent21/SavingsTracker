@@ -31,9 +31,9 @@
             this.lbl_yearlysavings = new System.Windows.Forms.Label();
             this.tb_savingsyearly = new System.Windows.Forms.TextBox();
             this.lbl_savingsgoal = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_sg = new System.Windows.Forms.TextBox();
             this.lbl_monthlysavings = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_ms = new System.Windows.Forms.TextBox();
             this.lbl_savingsaccount = new System.Windows.Forms.Label();
             this.tb_savingsaccount = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             this.tb_sg2 = new System.Windows.Forms.TextBox();
             this.lbl_sg2 = new System.Windows.Forms.Label();
             this.lbl_sg4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_sg4 = new System.Windows.Forms.TextBox();
             this.lbl_sg3 = new System.Windows.Forms.Label();
             this.tb_sg3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -67,6 +67,7 @@
             this.tb_savingsyearly.Size = new System.Drawing.Size(100, 20);
             this.tb_savingsyearly.TabIndex = 50;
             this.tb_savingsyearly.Text = "0";
+            this.tb_savingsyearly.TextChanged += new System.EventHandler(this.tb_savingsyearly_TextChanged);
             // 
             // lbl_savingsgoal
             // 
@@ -77,13 +78,13 @@
             this.lbl_savingsgoal.TabIndex = 49;
             this.lbl_savingsgoal.Text = "Savings goal";
             // 
-            // textBox2
+            // tb_sg
             // 
-            this.textBox2.Location = new System.Drawing.Point(199, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 48;
-            this.textBox2.Text = "0";
+            this.tb_sg.Location = new System.Drawing.Point(199, 94);
+            this.tb_sg.Name = "tb_sg";
+            this.tb_sg.Size = new System.Drawing.Size(100, 20);
+            this.tb_sg.TabIndex = 48;
+            this.tb_sg.Text = "0";
             // 
             // lbl_monthlysavings
             // 
@@ -94,13 +95,14 @@
             this.lbl_monthlysavings.TabIndex = 47;
             this.lbl_monthlysavings.Text = "Monthly savings";
             // 
-            // textBox1
+            // tb_ms
             // 
-            this.textBox1.Location = new System.Drawing.Point(199, 120);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 46;
-            this.textBox1.Text = "0";
+            this.tb_ms.Location = new System.Drawing.Point(199, 120);
+            this.tb_ms.Name = "tb_ms";
+            this.tb_ms.Size = new System.Drawing.Size(100, 20);
+            this.tb_ms.TabIndex = 46;
+            this.tb_ms.Text = "0";
+            this.tb_ms.TextChanged += new System.EventHandler(this.tb_ms_TextChanged);
             // 
             // lbl_savingsaccount
             // 
@@ -205,13 +207,13 @@
             this.lbl_sg4.TabIndex = 64;
             this.lbl_sg4.Text = "Saving goal #4";
             // 
-            // textBox3
+            // tb_sg4
             // 
-            this.textBox3.Location = new System.Drawing.Point(196, 304);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 63;
-            this.textBox3.Text = "0";
+            this.tb_sg4.Location = new System.Drawing.Point(196, 304);
+            this.tb_sg4.Name = "tb_sg4";
+            this.tb_sg4.Size = new System.Drawing.Size(100, 20);
+            this.tb_sg4.TabIndex = 63;
+            this.tb_sg4.Text = "0";
             // 
             // lbl_sg3
             // 
@@ -236,7 +238,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(319, 386);
             this.Controls.Add(this.lbl_sg4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tb_sg4);
             this.Controls.Add(this.lbl_sg3);
             this.Controls.Add(this.tb_sg3);
             this.Controls.Add(this.lbl_sg2);
@@ -251,9 +253,9 @@
             this.Controls.Add(this.lbl_yearlysavings);
             this.Controls.Add(this.tb_savingsyearly);
             this.Controls.Add(this.lbl_savingsgoal);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tb_sg);
             this.Controls.Add(this.lbl_monthlysavings);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_ms);
             this.Controls.Add(this.lbl_savingsaccount);
             this.Controls.Add(this.tb_savingsaccount);
             this.Name = "Form1";
@@ -268,9 +270,9 @@
         private System.Windows.Forms.Label lbl_yearlysavings;
         private System.Windows.Forms.TextBox tb_savingsyearly;
         private System.Windows.Forms.Label lbl_savingsgoal;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_sg;
         private System.Windows.Forms.Label lbl_monthlysavings;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_ms;
         private System.Windows.Forms.Label lbl_savingsaccount;
         private System.Windows.Forms.TextBox tb_savingsaccount;
         private System.Windows.Forms.Label label1;
@@ -283,7 +285,7 @@
         private System.Windows.Forms.TextBox tb_sg2;
         private System.Windows.Forms.Label lbl_sg2;
         private System.Windows.Forms.Label lbl_sg4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_sg4;
         private System.Windows.Forms.Label lbl_sg3;
         private System.Windows.Forms.TextBox tb_sg3;
     }
